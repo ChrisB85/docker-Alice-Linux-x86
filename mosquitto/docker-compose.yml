@@ -44,8 +44,8 @@ services:
   mqtt:
       build:
         context: .
-        #dockerfile: ./Docker/Dockerfile.amd
-        dockerfile: ./Docker/Dockerfile.amd-strecth
+        dockerfile: ./Docker/Dockerfile.amd
+        #dockerfile: ./Docker/Dockerfile.amd-strecth
       image: poulsp/mosquitto-amd
       container_name: mqtt-amd
       restart: unless-stopped # Possible values are : no, on-failure[:max-retry], always, unless-stopped

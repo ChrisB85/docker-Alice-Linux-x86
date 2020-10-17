@@ -19,8 +19,8 @@ services:
     init: true
     restart: unless-stopped # Possible values are : no, on-failure[:max-retry], always, unless-stopped
     #command: /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf
-    #command: bash /start-scripts/start-alice-automatic.sh
-    command: bash /start-scripts/start-alice-manual.sh
+    command: bash /start-scripts/start-alice-automatic.sh
+    #command: bash /start-scripts/start-alice-manual.sh
 
     env_file:
       - ./Timezone.env
