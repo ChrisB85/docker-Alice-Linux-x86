@@ -15,7 +15,7 @@ echo ''
 #TODO Remove only for test 2020-06-22
 cd /misc
 if [ ! -d /misc/ProjectAlice ] ; then
-  git clone https://github.com/project-alice-assistant/ProjectAlice.git
+  git clone https://github.com/ChrisB85/ProjectAlice.git
 fi
 
 
