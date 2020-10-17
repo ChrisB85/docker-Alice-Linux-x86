@@ -23,6 +23,7 @@ fi
 
 
 if [ -d /home/pi/ProjectAlice ]; then
+  sudo chown -R $USER /home/pi/ProjectAlice
   if [ -z "$(ls -A -- '/home/pi/ProjectAlice')" ]; then
     bash /start-scripts/install/do_clone_alice.sh
   fi
