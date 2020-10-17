@@ -15,9 +15,9 @@ echo ''
 #TODO Remove only for test 2020-06-22
 cd /misc
 if [ ! -d /misc/ProjectAlice ] ; then
+  sudo mkdir /misc/ProjectAlice && sudo chown $USER /misc/ProjectAlice
   git clone https://github.com/ChrisB85/ProjectAlice.git
 fi
-
 
 #TODO uncomment git clone
 #cd /misc
